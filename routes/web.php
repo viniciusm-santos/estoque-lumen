@@ -12,7 +12,7 @@
 */
 
 $app->get('clientes', 'ClienteController@index');
-$app->post('clientes', 'ClienteController@store');
+$app->post('clientes', 'ClienteController@store')->middleware('cors');
 $app->get('clientes/{id}', 'ClienteController@show');
 $app->post('clientes/{id}', 'ClienteController@update');
 $app->delete('clientes/{id}', 'ClienteController@destroy');
