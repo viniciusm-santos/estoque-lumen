@@ -23,6 +23,7 @@ class CreateClientesTable extends Migration
             $table->string('profissao');
             $table->string('telefone');
             $table->string('celular');
+            $table->string('email');
             $table->integer('endereco_id')->unsigned();
             $table->timestamps();
 

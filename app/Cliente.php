@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Cliente extends Model
 {
     protected $fillable = ['nome', 'sexo', 'data_nascimento', 'cpf', 'rg', 'profissao',
-        'telefone', 'celular', 'endereco_id'];
+        'telefone', 'celular', 'email', 'endereco_id'];
 
     protected $dates = ['data_nascimento'];
 
