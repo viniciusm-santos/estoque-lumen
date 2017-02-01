@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class ClienteController extends Controller
 {
+    public function _construct()
+    {
+        $this->middleware('cors');
+    }
+    
     /**
      * Display a listing of the resource.
      *
